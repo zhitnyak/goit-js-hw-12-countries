@@ -1,5 +1,11 @@
-// export default function fetchCountries(searchQuery) {
-//   const r = fetch('https://restcountries.com/v2/name').then(response => {
-//     console.log(r);
-//   });
-// }
+export default function fetchCountries(searchQuery) {
+  const url = `https://restcountries.com/v2/name/${searchQuery}`;
+
+  return fetch(url)
+    .then(response => {
+      return response.json();
+    })
+    .then(countries => {
+      return countries;
+    });
+}

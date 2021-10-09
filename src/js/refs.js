@@ -1,5 +1,5 @@
 export const refs = {
   input: document.querySelector('.input'),
-  countryCardTpl: document.querySelector('.country-list'),
-  countryNameTpl: document.querySelector('.country-container'),
+  countryCard: document.querySelector('.country-list'),
+  countryName: document.querySelector('.country-container'),
 };

@@ -3,20 +3,19 @@
     <h2 class='country-name'>{{name}}</h2>
     <div class='country-thumb'>
       <div class='country-text'>
-        <p class='country-region'><span class='description'>Region:</span> {{region}}</p>
-        <p class='country-capital'><span class='description'>Capital:</span> {{capital}}</p>
-        <p class='country-population'><span class='description'>Population:</span>
-          {{population}}</p>
-        <p class='country-languages'><span class='description'>Languages:</span>
+        <p class='country-region'>Region:<span> {{region}} </span></p>
+        <p class='country-capital'>Capital:<span> {{capital}} </span></p>
+        <p class='country-population'>Population:<span> {{population}}</span></p>
+        <p class='country-languages'>Languages:
           <ul>
             {{#each languages}}
-              <li class='country-languages'>{{this.name}}</li>
+              <li class='country-languages'><span> {{this.name}} </span></li>
             {{/each}}
           </ul>
         </p>
       </div>
 
-      <img class='country-flag' src='{{flag}}' alt='{{name}}' />
+      <img class='country-flag' src='{{flag}}' alt='{{name}}' width='300' />
     </div>
   </div>
 {{/each}}
