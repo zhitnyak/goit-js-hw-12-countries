@@ -23,7 +23,7 @@ function onSearch(e) {
 
 function updateCountryList(data) {
   clearData();
-
+  // console.log(data);
   if (data.length === 1) {
     renderCountryCard(data);
   } else if (data.length > 1 && data.length <= 10) {
